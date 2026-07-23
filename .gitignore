@@ -1,0 +1,12 @@
+# Backend
+Backend/node_modules/
+Backend/.env
+Backend/uploads/
+
+# Frontend
+Frontend/node_modules/
+Frontend/.env
+Frontend/dist/
+
+# System
+.DS_Store
