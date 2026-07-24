@@ -8,9 +8,13 @@ const startServer = async () => {
     try {
         await connectDB(); 
         console.log("✅ MongoDB connected successfully!");
-        app.listen(PORT, () => {
+        app.listen(PORT, "0.0.0.0", () => {
             console.log(`🚀 Server running on port ${PORT}`);
-            console.log(`🌐 Frontend URL: ${process.env.FRONTEND_URL || "http://localhost:5173"}`);
+            console.log(
+                `🌐 Frontend URL: ${
+                    process.env.FRONTEND_URL || "http://localhost:5173"
+                }`
+            );
         });
 
     } catch (error) {
